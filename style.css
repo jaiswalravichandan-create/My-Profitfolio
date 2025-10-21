@@ -28,9 +28,11 @@
 }
 
 body {
-  background-color: var(--bg-dark);
-  color: var(--text);
-  padding-top: 6px; /* Prevent navbar overlap */
+  background-color: #000000;
+  background-color: #11172A;
+  --gradient-blue: linear-gradient(145deg, #00bfff, #007bff);
+  --glass-bg: rgba(15, 15, 15, 0.8);
+  color: #ffffff;
 }
 
 /* Helper: visually hidden but accessible to screen readers */
@@ -115,14 +117,18 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--glass-bg);
-  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  border-bottom: 1px solid var(--glass-border);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+   
+/* Ensure menu icon sits above the navbar content and is clickable */
+.menu-icon { z-index: 11000; }
+.navbar-container { position: relative; }
 
 .navbar-container {
   width: 100%;
@@ -266,7 +272,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  width: 100%;
 }
 
 .hero-content {
@@ -278,6 +286,8 @@ body {
 }
 
 .hero-content h1 {
+  
+  margin-top: 100px;
   font-size: clamp(2.5rem, 8vw, 4rem);
   margin-bottom: var(--space-sm);
   line-height: 1.2;
@@ -410,8 +420,6 @@ button:hover {
   transform: scale(1.05);
   box-shadow: var(--card-shadow-hover);
 }
-
-
 
 /* ===============================
    ✨ Luxury Skills + Certifications
@@ -690,8 +698,11 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 300px;
+  margin: 10px auto;
+  padding: 0 40px;
   margin-bottom: 0px;
+  margin-left: 270px;
+  margin-right: 270px;
 
 }
 
@@ -815,6 +826,7 @@ button:hover {
   color: #bbb;
   line-height: 1.6;
   margin-bottom: 40px;
+  margin: 0 auto 40px;
 }
 
 .contact-details {
@@ -1199,6 +1211,7 @@ button:hover, .web-box img:hover, .graphic-box img:hover, .skill-card:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .footer-container {
@@ -1207,6 +1220,7 @@ button:hover, .web-box img:hover, .graphic-box img:hover, .skill-card:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 50px;
+  margin: 0 auto;
 }
 
 .footer-logo {
@@ -1298,25 +1312,6 @@ button:hover, .web-box img:hover, .graphic-box img:hover, .skill-card:hover {
   color: #ffffff;
   width: 100%;
 }
-
-/* =====================
-   DEBUG OVERRIDES - temporary
-   Ensure main structural elements are visible while debugging
-   Remove this block after confirming the site renders normally.
-   ===================== */
-header, main, footer, section, .hero, .about-section, .skills-section, .services-section, .projects-section {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  transform: none !important;
-}
-
-/* Ensure no full-screen overlays accidentally cover content */
-.fullscreen-viewer, .mobile-menu {
-  pointer-events: auto;
-}
-
-
 
 /* =========================================
    ✨ ABOUT SECTION SCROLL ANIMATION
@@ -1413,3 +1408,16 @@ header, main, footer, section, .hero, .about-section, .skills-section, .services
 }
 
 /* END Responsive Tweaks */
+
+/* Additional fixes: ensure mobile menu icon visibility and footer centering */
+@media (max-width: 768px) {
+  /* Force mobile menu icon visible */
+  .menu-icon { display: block !important; position: absolute !important; right: 18px !important; top: 20px !important; z-index: 40000 !important; }
+  .menu-icon i { color: var(--text); font-size: 1.6rem; }
+  .nav-links { display: none !important; }
+}
+
+/* Footer: center grid items and content */
+.footer-container { margin: 0 auto; justify-items: center; align-items: start; display: grid; grid-auto-flow: row; }
+.footer-brand, .footer-col { text-align: center; justify-self: center; }
+.footer-bottom { text-align: center; width: 100%; margin-top: 20px; }
