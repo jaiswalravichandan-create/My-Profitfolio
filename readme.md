@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/01e10675-eeea-4590-8758-8c1599595479/deploy-status)](https://app.netlify.com/projects/magnificent-kulfi-fa56e2/deploys)

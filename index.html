@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000">
+  <title>My Portfolio</title>
+  <!-- Preload critical assets -->
+  <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="fullscreen.css" />
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+ <header class="navbar">
+  <div class="navbar-container">
+    <div class="logo">
+      <h2>Ravi Chandan Jaiswal</h2>
+    </div>
+
+    <nav class="nav-links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-icon" id="menu-icon">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+<!-- ✅ Mobile Slide Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <div class="menu-header">
+    <h2>Menu</h2>
+    <span class="close-menu" id="close-menu">&times;</span>
+  </div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+  <!-- Hero Section -->
+    <main>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>"I design what people feel <br>And <span>build</span> what they <span>Believe"</span></h1>
+      <p>
+        Explore <span>my work</span> and see how creativity turns ideas into
+        <span>reality</span>.
+        <br>I ensure your ideas come alive exactly as you imagine.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects"><button>View My Work</button></a>
+      </div>
+    </div>
+  </section>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+    <span class="ticker-item">Full Stack Web Developer</span>
+  <span class="ticker-item">No-Code Website Expert</span>
+    <span class="ticker-item">Professional Video Editor</span>
+    <span class="ticker-item">Graphic Designer</span>
+    <span class="ticker-item">Content Creator</span>
+    <span class="ticker-item">Advance Excel</span>
+    <span class="ticker-item">Advance Diploma in Finance and Accounting</span>
+    
+    
+    </div>
+  </div>
+  <!-- Live region for screen readers (keeps visual ticker unchanged) -->
+  <div id="ticker-live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+    <!-- Hero 1 Section -->
+
+
+<!-- ✅ About Section (Compact & Clean) -->
+ <section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-left">
+     <h2 class="section-title">About Me</h2>
+
+  <h1>I'm Ravi <span id="typing"></span></h1>
+      <p>
+        A passionate developer and designer who loves building
+        modern, AI-powered, and performance-driven web experiences.
+        My goal is to turn creative ideas into digital realities.
+      </p>
+      <div class="about-buttons">
+        <a href="RaviChandanJaiswalResume.pdf"><button>Download Resume</button></a>
+        <a href="#contact"><button>Hire Me</button></a>
+      </div>
+  </div>
+
+    <div class="about-right">
+      <img src="mypic.jpg" alt="Ravi Chandan" loading="lazy">
+    </div>
+  </div>
+</section>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    if (document.getElementById('typing')) {
+      var typed = new Typed('#typing', {
+        strings: [
+          'Full Stack Web Developer',
+          'Frontend Developer',
+          'Backend Developer',
+          'Professional Video Editor',
+          'Graphic Designer',
+          'No-Code Website Expert',
+          'Advanced Excel',
+          'Content Creator'
+        ],
+        typeSpeed: 70,
+        loop: true,
+      });
+    }
+  </script>
+  <!-- ===================== Luxury Skills & Certifications ===================== -->
+<section id="skills" class="skills-section">
+  <h2 class="section-title">My Skills</h2>
+  <p class="section-subtitle">Where creativity meets technology 💡</p>
+
+  <!-- Skill Cards -->
+  <div class="skills-wrapper">
+    <div class="skills-card">
+      <i class="fa-solid fa-code"></i>
+      <h3>Frontend Development</h3>
+      <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+      <p>HTML, CSS, JavaScript, React, Tailwind CSS</p>
+    </div>
+
+    <div class="skills-card">
+      <i class="fa-solid fa-server"></i>
+      <h3>Backend Development</h3>
+      <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+      <p>Node.js, Express.js, Python, Django, C++, C language , SQL</p>
+    </div>
+
+    <div class="skills-card">
+      <i class="fa-solid fa-wand-magic-sparkles"></i>
+      <h3>No-Code Expert</h3>
+      <div class="progress"><div class="progress-bar" style="width: 95%"></div></div>
+      <p>Wordpress, Shopify, AI Website Builders</p>
+    </div>
+
+    <div class="skills-card">
+      <i class="fa-solid fa-pen-nib"></i>
+      <h3>Design & Editing</h3>
+      <div class="progress"><div class="progress-bar" style="width: 88%"></div></div>
+      <p> Photoshop, Illustrator, Canva, In-Design, Premiere Pro, After Effects, Blender</p>
+    </div>
+    <div class="skills-card">
+      <i class="fa-solid fa-pen-nib"></i>
+      <h3>Additional Skills</h3>
+      <div class="progress"><div class="progress-bar" style="width: 88%"></div></div>
+      <p>Content Creator , Event Organizer, Advance Excel, Advance Diploma in Finance and Accounting</p>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="divider-line"></div>
+
+    <!-- Certifications -->
+  <h2 class="section-title">Certifications</h2>
+  <p class="section-subtitle">Proof of dedication, learning, and excellence 🏅</p>
+
+  <div class="certifications-container">
+    <div class="certificate-card">
+      <img src="python.png" alt="Certificate 1">
+      <h4>Python</h4>
+    </div>
+    <div class="certificate-card">
+      <img src="c++.jpg" alt="Certificate 2">
+      <h4>C++</h4>
+    </div>
+    <div class="certificate-card">
+      <img src="c-language.jpg" alt="Certificate 3">
+      <h4>C-Language</h4>
+    </div>
+    <div class="certificate-card">
+      <h2>comming Soon</h2>
+      <!-- <img src="" alt="Certificate 4"> -->
+      <h4>Advance Diploma in Finance and Accounting</h4>
+    </div>
+    
+  </div> <!-- end .certifications-container -->
+
+</section> <!-- end #skills section (if not already closed) -->
+
+<!-- ===================== END ===================== -->
+
+ 
+<section class="projects-section">
+  <!-- Section Title -->
+   <section id="projects"></section>
+  <h2 class="section-title">My Latest Works</h2>
+
+  <!-- Video Editing Section -->
+  <div class="video-editing-section">
+    <h3 class="sub-title">Video Editing Demo</h3>
+
+    <div class="video-container">
+      <video src="Sample Video.mp4" controls></video>
+      <video src="video2.mp4" controls></video>
+    </div>
+  </div>
+
+  <!--  Graphic Design Section -->
+<div class="graphic-design-section">
+  <h3 class="sub-title">Graphic Design Works</h3>
+
+  <div class="graphic-container">
+    <div class="graphic-box"><img src="graphic1.jpg" alt="Design 2"></div>
+    <div class="graphic-box"><img src="graphic2.jpg" alt="Design 3"></div>
+    <div class="graphic-box"><img src="graphic3.jpg" alt="Design 4"></div>
+      <div class="graphic-box"><img src="graphic4.jpg" alt="Design 4"></div>
+  </div>
+</div>
+
+<!-- Web Development Section -->
+<div class="webdev-section">
+  <div class="webdev-header">
+    <h3 class="sub-title left-title">Web Development Project</h3>
+    <h3 class="sub-title right-title">No Code Website Project</h3>
+  </div>
+
+  <div class="webdev-container">
+    <!-- Left Column -->
+    <div class="webdev-column1">
+      <div class="web-box"><button>Coming Soon</button></div>
+     
+
+      <!-- Buttons Below -->
+      <div class="button-group">
+       
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="webdev-column2">
+      <div class="web-box">
+        <a href="https://www.google.com" target="_blank" class="btn"><button>AI Project</button></a></div>
+     
+      </div>
+    </div>
+  </div>
+</div>
+<section id="services" class="services-section">
+  <h2 class="section-title">My Services  Editor Ishan Kherde</h2>
+  <p class="section-subtitle">Creative digital solutions for your brand</p>
+
+  <div class="services-wrapper">
+    <div class="service-card">
+      <div class="icon-box">
+        <i class="fa-solid fa-paintbrush"></i>
+      </div>
+      <h2>Graphic Design</h2>
+      <p>Unique, creative logos and social media visuals that define your brand’s identity.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon-box">
+        <i class="fa-solid fa-video"></i>
+      </div>
+      <h2>Video Editing</h2>
+      <p>Professional editing with cinematic color grading and seamless transitions.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon-box">
+        <i class="fa-solid fa-code"></i>
+      </div>
+      <h2>Web Development</h2>
+      <p>Fully responsive websites built with clean, modern design and smooth animations.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon-box">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+      </div>
+      <h3>No-Code Websites</h3>
+      <p>Launch fast using Ai, Wordpress, or Shopify — stunning results without complex coding.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <h2 class="contact-title">Let's Work Together 🤝</h2>
+  <p class="contact-description">
+    I'd love to collaborate with creative minds, innovative brands, and visionary teams.
+    Reach out via any platform below 👇
+  </p>
+
+  <div class="contact-details">
+    <p><strong>📍</strong> Ravi Chandan Jaiswal</p>
+    <p><strong>📧</strong> <a href="mailto:jaiswalravichandan@gmail.com">jaiswalravichandan@gmail.com</a></p>
+    <p><strong>📞</strong> <a href="tel:+918601239277">+91 8601236277</a></p>
+  </div>
+
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/ravi-chandan-jaiswal-6305b038b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/jaiswalravichandan-create"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.instagram.com/iamravichandanjaiswal"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/14RSKHUuka4/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com/iamravichandan?t=E-iFKseUhvUlJrS99niuzA&s=08"><i class="fa-brands fa-x"></i></a>
+         <a href="https://wa.me/message/6UBYIPLJHJNEO1"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</section>
+
+   <footer class="main-footer modern-footer">
+  <div class="footer-container">
+    <!-- Column 1 -->
+    <div class="footer-brand">
+      <h2 class="footer-logo">Ravi Chandan Jaiswal</h2>
+      <p class="footer-about">
+        Turning ideas into powerful digital experiences — design, code and creativity blended seamlessly.
+      </p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/iamravichandanjaiswal"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ravi-chandan-jaiswal-6305b038b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/jaiswalravichandan-create"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/message/6UBYIPLJHJNEO1"><i class="fab fa-whatsapp"></i></a>
+         <a href="https://x.com/iamravichandan?t=E-iFKseUhvUlJrS99niuzA&s=08"><i class="fab fa-x"></i></a>
+          <a href="https://www.facebook.com/share/14RSKHUuka4/"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <ul>
+        <li><i class="fa-solid fa-envelope"></i> jaiswalravichandan@gmail.com</li>
+        <li><i class="fa-solid fa-phone"></i> +91 8601236277</li>
+        <li><i class="fa-solid fa-location-dot"></i> Gorakhpur, India</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-line"></div>
+  <div class="footer-bottom">
+    <p>© 2025 Ravi Chandan | All Rights Reserved 💙</p>
+  </div>
+</footer>
+
+
+<script src="fullscreen.js"></script>
+ </main>
+ 
+<!-- ===== Fullscreen Viewer ===== -->
+<div id="fullscreen-viewer" class="fullscreen-viewer">
+  <span class="close-btn">&times;</span>
+  <img id="fullscreen-img" class="fullscreen-content" />
+  <video id="fullscreen-video" class="fullscreen-content" controls></video>
+</div>
+
+</body>
+</html>
