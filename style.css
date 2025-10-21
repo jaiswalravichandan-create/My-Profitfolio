@@ -1065,7 +1065,17 @@ button:hover {
   padding-bottom: 15px;
   margin-bottom: 25px;
 }
+.menu-header h2 {
+  font-size: 2.0rem;
+  margin-left: 50px;
+  
 
+}
+.menu-header span{
+  size: 5rem;
+  margin-right: 0px;
+  margin-left: 50px;
+}
 .close-menu {
   font-size: 2rem;
   cursor: pointer;

@@ -42,7 +42,9 @@
     justify-content: space-between;
     height: 48px;
   }
-
+.navbar-container h2{
+  margin-top: 10px;
+}
   .logo h2 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -84,6 +86,7 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
+
   }
 
   .hero-content h1 {
@@ -147,7 +150,7 @@
   .about-right img {
     width: 75%;
     max-width: 260px;
-    height: auto;
+    height: 100%;
     margin: 0 auto;
     display: block;
     border-radius: 10px;
