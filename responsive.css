@@ -207,6 +207,7 @@
     align-items: start;
     max-width: 1200px;
     margin: 0 auto;
+  
   }
 
   .certificate-card {
@@ -219,7 +220,7 @@
 
   .certificate-card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     border-radius: 8px;
   }
